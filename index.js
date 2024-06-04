@@ -1,11 +1,5 @@
-// first step imprt the mongoose 
-// second step connection , schema,model,insert the dataor find or delete...
+
 const mongoose = require('mongoose');
-// mongoose ko connect kiya mongodb ke sath 
-// // 127.0.0.. the address of the mongodb 
-// myblog  the name of the database
-// mongoose mongodb ke database ko handle kerta hai
-// express hai jo router ko handle kerta hai or sath hi request listen kerta hai then response deta hai front endko
 mongoose.connect('mongodb://127.0.0.1:27017/myblog');
 const { Schema } = mongoose;
 
