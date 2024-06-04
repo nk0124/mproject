@@ -1,0 +1,8 @@
+// mongoose mongodb ke data ke sath connection ka kam kerta hai 
+// mongoose ek structure base issliye ismai schema v create kiya jata hai than model 
+mongoose.connect('mongodb://127.0.0.1:27017/contacts');
+
+const User = mongoose.model('User', { name: String ,marks:Number,});
+
+const user1 = new User({ name: 'neeta',marks:10 });
+user1.save().then(() => console.log('record save'));
